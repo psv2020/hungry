@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: normal;
     // src: local('Banny Bold Round'), url('Banny-BoldRound.woff') format('woff');
-    src: url(/hungry/font/Banny-BoldRound.woff) format('woff'); 
+    src: url(/font/Banny-BoldRound.woff) format('woff'); 
 }   
 
 // === mixin ===
@@ -406,7 +406,7 @@ input:not(:focus):invalid {
     width: 100%;
     margin: 0 auto;
     padding-bottom: $paddingY/2;
-    background: url(/hungry/img/header-bg.png) no-repeat 50% 50%;
+    background: url(/img/header-bg.png) no-repeat 50% 50%;
     background-size: cover;
     color: $color-white;
 
@@ -890,7 +890,7 @@ input:not(:focus):invalid {
     position: relative;
     height: auto;
     margin: 0 auto;
-    background: url(/hungry/img/team-bg.png) no-repeat 50% 50%;
+    background: url(/img/team-bg.png) no-repeat 50% 50%;
     background-size: cover;
     color: $color-white;
     padding-top: $padding-40;
@@ -1033,6 +1033,27 @@ input:not(:focus):invalid {
 
     h6 {
         position: relative;
+    }
+}
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    &-1 {
+        left: 35%;
+    }
+    
+    &-2 {
+        left: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }   
+    
+    &-3 {
+        left: 65%;
+        background-color: rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -1415,36 +1436,36 @@ input:not(:focus):invalid {
 }
 
 
-.vertical-left {
-    position: absolute;
-    bottom: -$base-5 * 4;
-    left: $base-5 * 59;
-    width: $base-5 * 135;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-}
+// .vertical-left {
+//     position: absolute;
+//     bottom: -$base-5 * 4;
+//     left: $base-5 * 59;
+//     width: $base-5 * 135;
+//     border-top: 1px solid rgba(255, 255, 255, 0.2);
+//     transform: rotate(-90deg);
+//     transform-origin: left top 0;
+// }
 
-.vertical-center {
-    position: absolute;
-    top: $base-5 * 135;
-    left: $base-4 * 179;
-    height: $base-5 * 60;
-    width: $base-5 * 135;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-}
+// .vertical-center {
+//     position: absolute;
+//     top: $base-5 * 135;
+//     left: $base-4 * 179;
+//     height: $base-5 * 60;
+//     width: $base-5 * 135;
+//     border-top: 1px solid rgba(255, 255, 255, 0.2);
+//     transform: rotate(-90deg);
+//     transform-origin: left top 0;
+// }
 
-.vertical-right {
-    position: absolute;
-    bottom: -$base-5 * 4;
-    left: $base-4 * 259;
-    width: $base-5 * 135;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-}
+// .vertical-right {
+//     position: absolute;
+//     bottom: -$base-5 * 4;
+//     left: $base-4 * 259;
+//     width: $base-5 * 135;
+//     border-top: 1px solid rgba(255, 255, 255, 0.2);
+//     transform: rotate(-90deg);
+//     transform-origin: left top 0;
+// }
 
 .dots {
     display: flex;
@@ -1567,7 +1588,7 @@ small {
     height: $base-5 * 135;
     margin: 0 auto;
     padding: $padding-40 $padding-80;
-    background: url(/hungry/img/events-bg.png) no-repeat 50% 50%;
+    background: url(/img/events-bg.png) no-repeat 50% 50%;
     background-size: cover;
     color: $color-white;
 
